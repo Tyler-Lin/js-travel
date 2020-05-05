@@ -1,0 +1,234 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a:hover{
+  text-decoration: none;
+}
+*,*:before,*:after{
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+/* ---------------- */
+body{
+  font-family: 'Noto Sans TC';
+}
+
+select {
+    background-color: rgba(256, 256, 256, 0.7);
+    border: solid 3px #ffffff;
+    display: block;
+    width: 452px;
+    height: 48px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    padding:  0 10px;
+    border-radius: 3px;
+    background-image: url('../img/icons_down.png');
+    background-position: right 17px center;
+    background-repeat: no-repeat;
+    -webkit-appearance: none; /*Chrome*/
+    -moz-appearance: none; /*FF*/
+}
+
+select::-ms-expand {
+    display: none; /*IE*/
+}
+
+
+header{
+    height: 380px;
+    padding-top: 89px;
+    background-image: url(../img/cover.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    line-height: 41px;
+    color:  #ffffff;
+    font-weight: normal;
+    letter-spacing: 3.89px;
+    margin-bottom: 96px;
+}
+.popular_zone{
+    padding:  20px 26px;
+    max-width: 800px;
+    background-color: #fff;
+    margin: -28px auto 0;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+h3{
+    font-size: 18px;
+    margin-bottom: 14px;
+    font-weight: normal;
+}
+.popular_zone ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.zone_item{
+    border-radius: 5px;
+    width: 130px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 21px;
+    color:  #fff;
+    margin-left: 23px;
+    cursor: pointer;
+}
+.zone_item:nth-child(1){
+    background-color: #8A82CC;
+}
+.zone_item:nth-child(2){
+    background-color: #FFA782;
+}
+.zone_item:nth-child(3){
+    background-color: #F5D005;
+}
+.zone_item:nth-child(4){
+    background-color: #559ACB;
+}
+
+.content{
+    max-width:  1024px;
+    margin:  0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8px;
+}
+
+.content_title{
+    font-size: 36px;
+    color:  #8a82cc;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+.place_wrap{
+    margin:  0 8px;
+    margin-bottom: 32px;
+    width: calc(50% - 16px);
+}
+
+.img{
+    height: 155px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.bar{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding:  14px 24px;
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.54) 100%);
+}
+.place_name{
+    font-size: 24px;
+    color:  #fff;
+}
+.place_zone{
+    position: absolute;
+    right: 24px;
+    bottom: 11px;
+    color:  #fff;
+}
+.details_wrap{
+    position: relative;  
+    padding:  10px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2)
+}
+.wrap_set{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+.wrap_set span{
+    min-width: 20px;
+    text-align: center;
+    margin-right: 15px;
+}
+.place_ticket{
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+}
+footer{
+    background-color: #559acb;
+    padding: 24px 0;
+}
+footer p{
+    margin:  7.5px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
