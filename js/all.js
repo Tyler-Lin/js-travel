@@ -105,6 +105,7 @@ $(document).ready(function() {
 // 分頁製作---
 
 function pagination (pageData, nowPage) {
+    card.innerHTML="";
     const dataTotal = pageData.length;
     const perpage = 6;
     const pageTotal = Math.ceil(dataTotal / perpage);
@@ -196,7 +197,6 @@ function pageBtn (page){
 }
 
 function switchPage(e){
-    card.innerHTML="";
     e.preventDefault();
     if(e.target.nodeName !== 'A') return;
     const page = e.target.dataset.page;
