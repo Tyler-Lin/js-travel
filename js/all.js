@@ -4,8 +4,8 @@ $(document).ready(function() {
     let str = '';
     let card = document.querySelector('.content');
     let selectZone = document.getElementById('selectZone');
+    let selectZoneData = new Array;
     let data; //所有資料
-    let selectZone = new Array;
     let zoneData = []; 
     let nowPage = 1;
     getData();
@@ -20,15 +20,21 @@ $(document).ready(function() {
         xhr.send(null);
         xhr.onload =function() {
             data = JSON.parse(xhr.responseText).result.records;
-            for (let i = 0; i < data.length; i++) {
-                selectZone.push(data[i].Zone);
-            }
-            selectZone = selectZone.filter(function (element, index, self) {
+            data.forEach(function(item,index){
+                selectZoneData.push(item.Zone);
+            })
+            // for (let i = 0; i < data.length; i++) {
+            //     selectZoneData.push(data[i].Zone);
+            // }
+            selectZoneData = selectZoneData.filter(function (element, index, self) {
                 return self.indexOf(element) === index;
             });
-            for (let i = 0; i < selectZone.length; i++) {
-                selectZone.innerHTML +='<option value="'+selectZone[i]+'">'+selectZone[i]+'</option>'
-            }
+            selectZoneData.forEach(function(item,index){
+                selectZone.innerHTML += '<option value="'+item+'">'+item+'</option>'
+            })
+            // for (let i = 0; i < selectZoneData.length; i++) {
+            //     selectZone.innerHTML +='<option value="'+selectZoneData[i]+'">'+selectZoneData[i]+'</option>'
+            // }
             str = '三民區';
             updateData();
         }
